@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+h4 {
+color:Tomato;}
+
+h1 { 
+color:Tomato;}
+
+p1 {
+color:Black;}
+
+.p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+.p2 {
+  font-family: Lucida Handwriting, serif;
+	font-size: 80px;
+	color: #B0F2B6;
+	text-align: center;
+	text-shadow: 2px 2px 5px red;
+}
+
+
+body {
+  background-color: lightblue;
+}
+
+#customers {
+  font-family: Arial, Helvetica, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+background-color: Tomato;
+}
+
+
+
+#customers tr:hover {background-color:#00FFFF ;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: Tomato;
+  color: #00FFFF;
+
+
+
+
+}
+
+</style>
+<script>
+function VeziViitor()
+	{
+document.getElementById("GG").onmouseover = function() {mouseOver()};
+document.getElementById("GG").onmouseout = function() {mouseOut()};
+
+
+var x=2021;
+var y=2002;
+function mouseOver() {
+  document.getElementById("GG").innerHTML=x-y;
+}
+
+function mouseOut() {
+  document.getElementById("GG").innerHTML=y;
+}
+	    
+		document.getElementById("nume").innerHTML = "Dr. Ing. Onofrei Ioan-Cristian";
+		document.getElementById("es1").innerHTML = "Realizari de obtinut in perioada facultatii";
+		document.getElementById("es2").innerHTML = "Terminarea unui intership"; 
+		document.getElementById("es3").innerHTML = "Atingerea potentialului maxim";
+		document.getElementById("es4").innerHTML = "Sa ma stabilesc in Cluj";
+		document.body.style.backgroundColor="Violet";
+		document.getElementById("nume").style.color="blue";
+        document.getElementById("poza").src = "pinocchio.jpg";
+		document.getElementById("poza").style.opacity = "0.7";
+		document.getElementById("poza").style.border = "4.5px";
+		document.getElementById("p1").style.color="blue";
+		document.getElementById("p2").style.color="blue";
+		document.getElementById("p3").style.color="blue";
+		document.getElementById("es1").style.color="blue";
+		
+		var tabelEducatie = document.getElementById("tabEducatie");
+		
+		
+		
+		
+		
+		tabelEducatie.rows[0].cells[0].inner.HTML = " ";
+		tabelEducatie.rows[0].cells[2].inner.HTML = "";
+		tabelEducatie.rows[1].cells[0].inner.HTML = "";
+		tabelEducatie.rows[1].cells[2].inner.HTML = "";
+		
+		var par = document.getElementByTagName("p");
+		var i;
+			for(i=0; i<par.lenght; i++){
+				par[i].style.color = "purple";
+				}
+		
+
+	
+}
+
+
+</script>	 
+<body>
+
+
+<p id="nume" class="p2"> Onofrei Ioan-Cristian </p>
+ <img id="poza" src="cristian.jpg" alt="Poza" style="width:50%;" > 
+
+<h4 id="p1"> E-mail: </h4> 
+
+<p> <h3> <a href="https://www.gmail.com">tempo2k2k@gmail.com</a> </h3> </p>
+
+<p id="GG">2002</p>
+
+<button onclick="VeziViitor()">Alta viata</button>
+
+<h4 id="p2" >Citat: </h4>
+
+    <p class="p1" > ⭐ Ar trebui sa ne alegem cartile la fel cum ne alegem partenerul de viata: pentru valoarea pe care o ascund in interior. (Charles Caleb Colton) </p>
+
+
+<h4 id="p3"> Discipline: </h4> 
+<p >
+<table id="customers">
+  <tr>
+    <th>Disciplina</th>
+    <th>Anul de studiu</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Grafica asistata de calculator</td>
+    <td>anul II</td>
+    <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/15.pdf">Grafica asistata de calculator</a> </td>
+  </tr>
+  <tr>
+    <td>Sisteme cu microprocesoare </td>
+    <td>anul III</td>
+    <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/37.pdf">Sisteme cu microprocesoare</a> </td>
+  </tr>
+  <tr>
+    <td>Sisteme de comutatie si rutare</td>
+    <td>anul III</td>
+    <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/40.pdf">Sisteme de comutatie si rutare</a> </td>
+  </tr>
+
+</table>
+
+
+<h4 id="es1"> Hobby-uri</h4>
+
+<table id="customers">
+  <tr>
+    <td id="es2"> ⭐ Fotbal</td>
+    <td id="es3"> ⭐ Gaming</td>
+	<td id="es4"> ⭐ Editing</td>
+   
+  </tr>
+  </table>
+  
+ 
+
+
+</body>
+</html>

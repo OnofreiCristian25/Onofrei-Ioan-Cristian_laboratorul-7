@@ -1,0 +1,60 @@
+<style>
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+h4 {
+color:Tomato;}
+
+h1 { 
+color:Tomato;}
+
+p1 {
+color:Black;}
+
+p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+p2 {
+  font-family: Lucida Handwriting, serif;
+	font-size: 80px;
+	color: #B0F2B6;
+	text-align: center;
+	text-shadow: 2px 2px 5px red;
+}
+
+
+body {
+  background-image: url("sqrt.jpg");
+}
+
+#customers {
+  font-family: Arial, Helvetica, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+background-color: Tomato;
+}
+
+
+
+#customers tr:hover {background-color:#00FFFF ;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: Tomato;
+  color: #00FFFF;
+}
+</style>
